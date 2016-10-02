@@ -22,33 +22,34 @@ public class Point2DTest {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void testGetX() throws Exception {
 
     }
 
     @Test
     public void testSetX() throws Exception {
+        Point2D point = new Point2D(2,3);
+        point.setX(3); point.setX(4);
+
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void testGetY() throws Exception {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void testSetY() throws Exception {
 
     }
 
     @Test
     public void testTranslate() throws Exception {
-        /*Point2D point = new Point2D(2,3);
-        Point2D point2 = new Point2D(4,5);
+        Point2D point = new Point2D(2,3);
+        point.translate(1,2);
 
-        assertEquals(point2,point.translate(2,2));
-*/
     }
 
 
@@ -67,12 +68,12 @@ public class Point2DTest {
         assertEquals(2.8284271247461903,point2.distance(point));
     }
 
-    @Test
+    @Test(enabled = false)
     public void testToString() throws Exception {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void testAffiche() throws Exception {
 
     }

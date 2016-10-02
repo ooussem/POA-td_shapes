@@ -5,11 +5,8 @@ public abstract class Shape3D extends Shape{
     protected Point3D refPoint;
 
     protected abstract double volume();
-    protected Point3D getRefPoint()
-    {
-        return new Point3D();
+
+    public Point3D getRefPoint() {
+        return this.refPoint;
     }
-
-
-
 }

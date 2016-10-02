@@ -2,7 +2,7 @@
  * Created by OOussema on 02/10/2016.
  */
 public class Point3D extends Point2D {
-    protected double z;
+    double z;
 
     public Point3D(double x, double y, double z) {
         super(x,y);

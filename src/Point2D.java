@@ -3,9 +3,10 @@ import java.awt.*;
 /**
  * Created by OOussema on 02/10/2016.
  */
+
 public class Point2D {
-    protected double x;
-    protected double y;
+    double x;
+    double y;
 
     public Point2D() {
         this(0,0);
