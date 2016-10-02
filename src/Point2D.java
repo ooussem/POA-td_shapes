@@ -4,8 +4,8 @@ import java.awt.*;
  * Created by OOussema on 02/10/2016.
  */
 public class Point2D {
-    private double x;
-    private double y;
+    protected double x;
+    protected double y;
 
     public Point2D() {
         this(0,0);
@@ -46,7 +46,7 @@ public class Point2D {
     double distance(Point2D otherP)
     {
         double dx = this.x - otherP.x;
-        double dy = this.x - otherP.y;
+        double dy = this.y - otherP.y;
 
         return Math.sqrt(dx*dx + dy*dy);
     }
@@ -55,14 +55,14 @@ public class Point2D {
     public String toString()
     {
         String str = "Point de la class " + this.getClass().getName();
-        str += "de coordonnée : (" +this.x+ ", " +this.y + ")";
+        str += "de coordonnée : " +this.x+ ", " +this.y;
 
         return str;
     }
 
-    public void affiche(String str)
+    public void affiche()
     {
-        System.out.println(str);
+        System.out.print(toString());
     }
 
     @Override
