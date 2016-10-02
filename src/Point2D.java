@@ -48,7 +48,7 @@ public class Point2D {
         double dx = this.x - otherP.x;
         double dy = this.y - otherP.y;
 
-        return Math.sqrt(dx*dx + (dy*dy));
+        return Math.sqrt(((dx * dx) + (dy * dy)));
     }
 
     @Override

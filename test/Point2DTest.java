@@ -2,6 +2,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +55,8 @@ public class Point2DTest {
 
     @Test
     public void testIsOrigin() throws Exception {
-
+        Point2D point = new Point2D(2,3);
+        assertEquals(false, point.isOrigin());
     }
 
     @Test
@@ -62,7 +64,7 @@ public class Point2DTest {
         Point2D point = new Point2D(2,3);
         Point2D point2 = new Point2D(4,5);
 
-        assertEquals(2.8284271247461903,point.distance(point2));
+        assertEquals(2.8284271247461903,point2.distance(point));
     }
 
     @Test
@@ -77,7 +79,10 @@ public class Point2DTest {
 
     @Test
     public void testEquals() throws Exception {
+        Point2D point = new Point2D(2,3);
+        Point2D point2 = new Point2D(4,5);
 
+        assertEquals(false, point.equals(point2));
     }
 
 }
