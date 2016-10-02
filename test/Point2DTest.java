@@ -62,7 +62,7 @@ public class Point2DTest {
         Point2D point = new Point2D(2,3);
         Point2D point2 = new Point2D(4,5);
 
-        assertEquals(point.distance(point2),4);
+        assertEquals(2.8284271247461903,point.distance(point2));
     }
 
     @Test
