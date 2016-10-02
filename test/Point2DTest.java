@@ -70,12 +70,14 @@ public class Point2DTest {
 
     @Test(enabled = false)
     public void testToString() throws Exception {
-
+        Point2D point = new Point2D(2,3);
+        System.out.println(point.toString());
     }
 
-    @Test(enabled = false)
+    @Test
     public void testAffiche() throws Exception {
-
+        Point2D point = new Point2D(2,3);
+        point.affiche();
     }
 
     @Test

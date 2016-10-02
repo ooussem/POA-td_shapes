@@ -56,7 +56,7 @@ public class Point2D {
     public String toString()
     {
         String str = "Point de la class " + this.getClass().getName();
-        str += "de coordonnée : " +this.x+ ", " +this.y;
+        str += " de coordonnée : " +this.x+ ", " +this.y;
 
         return str;
     }

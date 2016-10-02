@@ -21,15 +21,18 @@ public class RectangleTest {
 
     @Test
     public void testPerimeter() throws Exception {
-        Rectangle rect = new Rectangle(2.0,3.0);
-        assertEquals(10.0, rect.perimeter());
+        Rectangle rect = new Rectangle(2,3);
+        double perimeter = rect.perimeter();
+        assertEquals(10,perimeter,0.0);
 
     }
 
     @Test
     public void testSurface() throws Exception {
         Rectangle rect = new Rectangle(2,3);
-        assertEquals(6.0,rect.surface());
+        double surface = rect.surface();
+        assertEquals(6,surface,0.0);
+
 
     }
 
