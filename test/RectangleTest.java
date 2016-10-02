@@ -7,7 +7,8 @@ import static org.testng.Assert.*;
 /**
  * Created by OOussema on 02/10/2016.
  */
-public class Shape3DTest {
+public class RectangleTest {
+
     @BeforeMethod
     public void setUp() throws Exception {
 
@@ -19,12 +20,16 @@ public class Shape3DTest {
     }
 
     @Test
-    public void testVolume() throws Exception {
+    public void testPerimeter() throws Exception {
+        Rectangle rect = new Rectangle(2.0,3.0);
+        assertEquals(10.0, rect.perimeter());
 
     }
 
     @Test
-    public void testGetRefPoint() throws Exception {
+    public void testSurface() throws Exception {
+        Rectangle rect = new Rectangle(2,3);
+        assertEquals(6.0,rect.surface());
 
     }
 

@@ -8,7 +8,7 @@ public abstract class Shape2D extends Shape implements Translatable2D {
     abstract double perimeter();
 
     @Override
-    public Point2D getRefPoint() {
+    public Point2D getRefPoint(){
         return refPoint;
     }
 }

@@ -1,7 +1,8 @@
 /**
  * Created by OOussema on 02/10/2016.
  */
-public abstract class Shape3D extends Shape{
+public abstract class Shape3D extends Shape implements Translatable3D{
+
     protected Point3D refPoint;
 
     protected abstract double volume();
