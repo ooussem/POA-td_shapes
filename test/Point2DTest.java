@@ -31,8 +31,6 @@ public class Point2DTest {
     public void testSetX() throws Exception {
         Point2D point = new Point2D(2,3);
         point.setX(3); point.setX(4);
-
-
     }
 
     @Test(enabled = false)
@@ -51,8 +49,6 @@ public class Point2DTest {
         point.translate(1,2);
 
     }
-
-
 
     @Test
     public void testIsOrigin() throws Exception {
