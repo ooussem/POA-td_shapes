@@ -21,22 +21,28 @@ public class ConeTest {
     }
     @Test
     public void testGetHeight() throws Exception {
-
+        Cone cone = new Cone(3,3);
+        assertEquals(cone.getHeight(),3,0.0);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testSetHeight() throws Exception {
-
+        Cone cone = new Cone(3,3);
+        cone.setHeight(9);
+        assertEquals(cone.getHeight(),9,0.0);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testGetRadius() throws Exception {
-
+        Cone cone = new Cone(3,7);
+        assertEquals(cone.getRadius(),7,0.0);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testSetRadius() throws Exception {
-
+        Cone cone = new Cone(3,7);
+        cone.setRadius(12);
+        assertEquals(cone.getRadius(),12,0.0);
     }
 
     @Test
