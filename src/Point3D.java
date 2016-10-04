@@ -29,7 +29,7 @@ public class Point3D extends Point2D {
 
     @Override
     boolean isOrigin() {
-        return this.z == 0 && super.isOrigin();
+        return (this.z == 0 && super.isOrigin());
     }
 
 

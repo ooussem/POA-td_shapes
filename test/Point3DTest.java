@@ -19,6 +19,18 @@ public class Point3DTest {
     }
 
     @Test
+    public void testGetX() throws Exception {
+        Point3D point3D = new Point3D(1,2,8);
+        assertEquals(point3D.getX(),1,0.0);
+    }
+
+    @Test
+    public void testGetY() throws Exception {
+        Point3D point3D = new Point3D(2,2,8);
+        assertEquals(point3D.getY(),2,0.0);
+    }
+
+    @Test
     public void testGetZ() throws Exception {
         Point3D point3D = new Point3D(2,2,8);
         assertEquals(point3D.getZ(),8,0.0);
@@ -33,17 +45,25 @@ public class Point3DTest {
 
     @Test
     public void testTranslate() throws Exception {
-
+        Point3D point3D = new Point3D(2,2,8);
+        point3D.translate(2,2,0);
+        assertEquals(point3D.getX(),4,0.0);
+        assertEquals(point3D.getY(),4,0.0);
+        assertEquals(point3D.getZ(),8,0.0);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testIsOrigin() throws Exception {
-
+        Point3D point3D = new Point3D(0,0,0);
+        Point3D origine = new Point3D(0,0,0);
+        assertEquals(origine, point3D);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testDistance() throws Exception {
-
+        Point3D point3D = new Point3D(2,2,8);
+        Point3D point3D2 = new Point3D(4,1,15);
+        assertEquals(point3D.distance(point3D2),7.34,0.1);
     }
 
     @Test
