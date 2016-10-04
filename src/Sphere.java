@@ -6,6 +6,14 @@ public class Sphere extends Shape3D {
 
     private double radius;
 
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
     public Sphere() {
         this(0);
     }
@@ -16,7 +24,7 @@ public class Sphere extends Shape3D {
 
     @Override
     double surface() {
-        return 0;
+        return (4*Math.PI*this.radius*this.radius);
     }
 
     @Override
