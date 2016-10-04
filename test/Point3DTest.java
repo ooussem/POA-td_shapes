@@ -18,17 +18,20 @@ public class Point3DTest {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void testGetZ() throws Exception {
-
+        Point3D point3D = new Point3D(2,2,8);
+        assertEquals(point3D.getZ(),8,0.0);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testSetZ() throws Exception {
-
+        Point3D point3D = new Point3D(2,2,8);
+        point3D.setZ(10);
+        assertEquals(point3D.getZ(),10,0.0);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testTranslate() throws Exception {
 
     }
